@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(234, 234, 226);
+  color: #555;
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+h1 {
+  padding-bottom: .5em;
+  font-size: 2.5em;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.select {
+  font-family: "Helvetica", "Arial", sans-serif;
+  padding-left: 1rem;
+  font-size: 1.2em;
+  position: relative;
+}
+#beers {
+  background-color: rgb(31, 159, 210);
+  color: rgb(234, 234, 226);
+  padding: 1rem;
+  width: 25vw;
+  border: none;
+  font-size: 1em;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+#beer-detail {
+  margin: 0 auto;
+  padding-bottom: 1em;
+  line-height: 2;
+}
+#beer-detail h2,
+#beer-detail h3,
+#beer-detail h4 {
+  padding: 1em 0;
+}
+
+#beer-detail img{
+  max-width: 25vw;
+  max-height: 30vh;
+  float: right;
+  margin-left: 2em;
+}
