@@ -31,6 +31,26 @@ BeerInfoView.prototype.render = function (beer) {
   const beerDescription = this.createElement('p', beer.description);
   this.container.appendChild(beerDescription);
 
+  const foodTitle = this.createElement('h4', 'Food paring ');
+  this.container.appendChild(foodTitle);
+
+  const foodList = this.createMealsList(beer.food_pairing);
+  this.container.appendChild(foodList);
+
+};
+
+BeerInfoView.prototype.createMealsList = function (meals) {
+  const mealsList = document.createElement('ul');
+  mealsList.classList.add('food-pairing');
+
+  meals.forEach( (meal) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = meal;
+    mealsList.appendChild(listItem);
+  });
+
+  return mealsList;
+
 };
 
 BeerInfoView.prototype.createElement = function (elementType, text) {
@@ -38,5 +58,6 @@ BeerInfoView.prototype.createElement = function (elementType, text) {
   element.textContent = text;
   return element;
 };
+
 
 module.exports = BeerInfoView;
