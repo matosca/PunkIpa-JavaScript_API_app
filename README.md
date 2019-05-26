@@ -1,6 +1,6 @@
 # PunkIpa 
 
-![BrewDogs Beers - Info](images/punkipa_ipa.png)
+![BrewDogs Beers - Info](images/punkipa_api.png)
 
 This is a front-end web app that uses <https://api.punkapi.com/v2/> to dispaly different beers requested. This app was built with JavaScript and PubSub pattern making API requests to load JSON data into my application. 
 
